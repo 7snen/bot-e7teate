@@ -517,7 +517,7 @@ message.channel.send(`Successfully Unmuted ${mnt} :+1:`)
 
 
 client.on('message', message => {
-     if (message.content === "-support") {
+     if (message.content === "$support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -580,7 +580,7 @@ client.on('message',message =>{
 
 
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","TheH1ts Members"));
+    member.addRole(member.guild.roles.find("name","PG Members"));
     });
 
 
@@ -634,7 +634,7 @@ if (message.content.startsWith(prefix + 's')) {
 
 
 client.on('message', message => {
-	var prefix = "-";
+	var prefix = $";
 if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'move')) {
  if (message.member.hasPermission("MOVE_MEMBERS")) {
@@ -816,7 +816,7 @@ client.on('guildMemberAdd', member => {
                       
                                      .addField(' الـسيرفر', `${member.guild.name}`,true)
                                        
-     .setFooter("#TheH1TS CLAN ")
+     .setFooter("#PG Community ")
         .setTimestamp()
     
       channel.sendEmbed(embed);
@@ -1205,11 +1205,11 @@ client.on('message', message => {
         .setColor("2fff00")
         .setDescription(`
 **-------------------
--هذا هو الرابط :
+-هذا هو الرابط :https://discordapp.com/api/oauth2/authorize?client_id=585603757589659648&permissions=0&scope=bot
 -ارسله للي تحب وحيآك انت وياه
 -ونورنا ياجميل :heart: 
 ------------------- **`)
-        .setFooter("By:#TheH1ts")
+        .setFooter("By:#PG Community ")
       message.author.sendEmbed(Embed11)
     }
 });
@@ -1253,7 +1253,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if(message.content === prefix + "$mutechannel") {
+    if(message.content === prefix + "mutechannel") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -1287,7 +1287,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__�
 
 
 client.on('message', message => {
-  if(message.content === prefix + "$user"){
+  if(message.content === prefix + "user"){
     var embed = new Discord.RichEmbed()
     .setTitle(message.author.tag, message.author.avatarURL)
     .addField(`User`, message.author.username)
@@ -1368,7 +1368,7 @@ client.on('message',async message =>{
 
 
 var id = ['413660639668731914','241451199499468800'] //تذكر إذا كنت تبي تضيف شخص معاك حط فاصله وبعدين العلامه '
-var initcmd = '$'
+var initcmd = '-'
 const developers = id
 const adminprefix = initcmd;
 client.on('message', message => {
