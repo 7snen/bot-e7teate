@@ -9,7 +9,7 @@ client.on('ready', () => {
     console.log(`on  ${client.guilds.size} Servers `);
     console.log(`~~~~~~~~~~~~~~~~~~~~~~~~`);
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(`#PG Community|$Help`,"http://twitch.tv/y04zgamer")
+    client.user.setGame(`#PG Comunity|$Help`,"http://twitch.tv/y04zgamer")
     client.user.setStatus("dnd")
  });
  
@@ -517,11 +517,11 @@ message.channel.send(`Successfully Unmuted ${mnt} :+1:`)
 
 
 client.on('message', message => {
-     if (message.content === "$support") {
+     if (message.content === "-support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/bvrNWbY**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/g9bQteY**")
      
      
   message.channel.sendEmbed(embed);
@@ -596,7 +596,7 @@ client.on('guildMemberAdd', member=> {
 
 
 client.on('message', message => {
-  if (!message.content.startsWith(prefix)) return;
+  if (!message.content.startsWith($)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
   if (message.author.id !== '232564113459511306') return;
@@ -634,7 +634,7 @@ if (message.content.startsWith(prefix + 's')) {
 
 
 client.on('message', message => {
-	var prefix = $";
+	var prefix = "$";
 if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'move')) {
  if (message.member.hasPermission("MOVE_MEMBERS")) {
@@ -1209,7 +1209,7 @@ client.on('message', message => {
 -ارسله للي تحب وحيآك انت وياه
 -ونورنا ياجميل :heart: 
 ------------------- **`)
-        .setFooter("By:#PG Community ")
+        .setFooter("By:#PG Community")
       message.author.sendEmbed(Embed11)
     }
 });
@@ -1253,7 +1253,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if(message.content === prefix + "mutechannel") {
+    if(message.content === prefix + "$mutechannel") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -1367,8 +1367,8 @@ client.on('message',async message =>{
 
 
 
-var id = ['413660639668731914','241451199499468800'] //تذكر إذا كنت تبي تضيف شخص معاك حط فاصله وبعدين العلامه '
-var initcmd = '-'
+var id = ['490871722011131935'] //تذكر إذا كنت تبي تضيف شخص معاك حط فاصله وبعدين العلامه '
+var initcmd = '$'
 const developers = id
 const adminprefix = initcmd;
 client.on('message', message => {
@@ -1544,6 +1544,7 @@ client.on('message', async message => {
 
 
 
+
 //help
 
   client.on('message', msg => {
@@ -1564,101 +1565,56 @@ client.on('message', async message => {
 -😎 سهل الاستخدام
 -⚠ صيانه كل يوم
 -💵 مجاني بل كامل
-
 ـــــــــــــــــــــــــــــــــــــــــــ
  
 الأوامـر العآآمـة :loudspeaker: 
  
 ـــــــــــــــــــــــــــــــــــــــــــ
 اوامر البوت 
-
 $ping | لمعرفة بنقك و بنق البوت
-
 $bot | معلومـآت عن البوت
-
 $server | يعطيك معلومات عن السيرفر
-
 $embed | لكتابة الأمر مع الإمبد
-
 $skin <user> | يوريك سكن لاعب ماينكرافت
-
 $channels | يوريك معلومات جميع رومات السيرفر
-
 $avatar | للإطلاع على صورتك
-
 $bans | لرؤية المبندين اللي بالسيرفر
-
 $id | لمعرفة بعض المعلومات عنك في السيرفر
-
 $new | لفتح تكت في السيرفر
-
 $member | معلومات اعضاء السيرفر
-
 $emojis | يوريك ايموجيات السيرفر
-
 $ip1 .... $ip10 | يديك سيرفرات مانكرافت عشوائية
-
 $بيرسلك رابط السيرفر و رابط البوت للي يبي يضيفه | رابط 
  
 $user | بيعطيك معلومات عن نفسك
-
 $ip1 > ip10 | يعطيك سيرفرات ماينكرافت عشوائية 
-
 $emojis | لرؤية ايموجيات السيرفر
-
+$savatar | لرؤية صورة السيرفر
 و الرد التلقائي موجود .
 _______________________________
-
 الأوامر الأدارية.
-
 _______________________________
-
 $bc | لارسال رسالة بواسطة البوت لجميع اعضاء السيرفر
-
 $ban (@user) | لتبنيد شخص ما من السيرفر 
-
 $kick (@user) | لطرد شخص ما من السيرفر
-
 $vban (@user) | بمنع الشخص من دخول الرومات الصوتية 
-
 $uvban (@user) | يزيل منع الشخص من دخلو الرومات الصوتية 
-
 $vmute (@user) | يعطي ميوت للشخص داخل الرومات الصوتية 
-
 $uvmute (@user) | يزيل الميوت عن الشخص داخل الرومات الصوتية
-
 $vkick (@user) | يطرد الشخص من الروومات الصوتية 
-
 $mive (@user) سحب الشخص من الرم الصوتي الى رومك الوتي
-
 $mute (@user) | لاسكات شخص ما 
-
 $unmute (@user) | لألغاء الميوت عن شخص ما 
-
 $role (@user) | لأعطاء رتبه لعضو  
-
 $voicesetup | لصنع رووم صوتي 
-
 $createchannels | لصنع رووم صوتي او كتابي 
-
 $stream | لتحديد حاله البوت 
-
 $lis | لتغير اليسن حق البوت 
-
 $ply | لتحديد البلاي حق البوت
-
 $clear | يمسح الكتبة 
-
 $username | لتغير اسم البوت 
-
 $editavatar | لتغير صورة البوت 
-
-
 هاذي هي اوامر البوت كاملة اذا كان عندك اي استفسار التواصل مع !x_ike,..#1000
-
-
-
-
        ** `)
        .setFooter('By | x_ike ,')
    message.author.sendEmbed(embed)
